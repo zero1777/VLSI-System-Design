@@ -1,0 +1,3 @@
+s1(24May2021:00:58:40):  ncverilog +debug=3 testbench.v input_sram.v weight_sram.v output_sram.v top.v +access+r 
+s2(24May2021:01:44:01):  ncverilog +debug=3 testbench.v input_sram.v weight_sram.v output_sram.v top.v +access+r 
+s3(24May2021:01:44:10):  ncverilog +debug=3 header.v testbench.v input_sram.v weight_sram.v output_sram.v top_syn.v -v /theda21_2/library/GPDK045/cur/gsclib045/verilog/slow_vdd1v0_basicCells.v +access+r 

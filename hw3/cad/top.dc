@@ -1,0 +1,22 @@
+###################################################################
+
+# Created by write_script -format dctcl on Mon May 24 01:41:28 2021
+
+###################################################################
+
+# Set the current_design #
+current_design top
+
+set_units -time ns -resistance kOhm -capacitance pF -voltage V -current mA
+remove_wire_load_model
+set_local_link_library {slow_vdd1v2_basicCells.db}
+set_map_only [get_cells U3242] 
+set_map_only [get_cells U3241] 
+set_map_only [get_cells U3240] 
+set_map_only [get_cells U3239] 
+create_clock [get_ports clk]  -period 40  -waveform {0 20}
+set_dont_touch_network [get_clocks clk]
+set_fix_hold [get_clocks clk]
+set compile_inbound_cell_optimization false
+set compile_inbound_max_cell_percentage 10.0
+1
