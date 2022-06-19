@@ -1,0 +1,138 @@
+為了滿足檔案參照(符號)而包含了歸檔成員
+
+/users/course/tools/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(muldi3.o)
+                              firmware/multest.o (__mulsi3)
+/users/course/tools/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(multi3.o)
+                              firmware/multest.o (__muldi3)
+/users/course/tools/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(div.o)
+                              firmware/print.o (__divsi3)
+
+捨棄的輸入區段
+
+ .debug_line    0x0000000000000000       0x93 /users/course/tools/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(muldi3.o)
+ .debug_info    0x0000000000000000       0x26 /users/course/tools/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(muldi3.o)
+ .debug_abbrev  0x0000000000000000       0x14 /users/course/tools/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(muldi3.o)
+ .debug_aranges
+                0x0000000000000000       0x20 /users/course/tools/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(muldi3.o)
+ .debug_str     0x0000000000000000       0xa6 /users/course/tools/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(muldi3.o)
+ .debug_info    0x0000000000000000      0xcea /users/course/tools/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(multi3.o)
+ .debug_abbrev  0x0000000000000000      0x26f /users/course/tools/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(multi3.o)
+ .debug_loc     0x0000000000000000      0x176 /users/course/tools/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(multi3.o)
+ .debug_aranges
+                0x0000000000000000       0x20 /users/course/tools/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(multi3.o)
+ .debug_line    0x0000000000000000      0x424 /users/course/tools/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(multi3.o)
+ .debug_str     0x0000000000000000      0x7f2 /users/course/tools/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(multi3.o)
+ .debug_frame   0x0000000000000000       0x2c /users/course/tools/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(multi3.o)
+ .debug_line    0x0000000000000000      0x169 /users/course/tools/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(div.o)
+ .debug_info    0x0000000000000000       0x26 /users/course/tools/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(div.o)
+ .debug_abbrev  0x0000000000000000       0x14 /users/course/tools/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(div.o)
+ .debug_aranges
+                0x0000000000000000       0x20 /users/course/tools/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(div.o)
+ .debug_str     0x0000000000000000       0xa3 /users/course/tools/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(div.o)
+
+記憶體配置
+
+名稱           來源             長度             屬性
+mem              0x0000000000000000 0x0000000000bf0000
+*default*        0x0000000000000000 0xffffffffffffffff
+
+鏈結器命令稿和記憶體對映
+
+
+.memory         0x0000000000000000     0x280d
+                0x0000000000000000                . = 0x0
+ start*(.text)
+ *(.text)
+ .text          0x0000000000000000      0x4cc firmware/start.o
+                0x00000000000004a6                hard_mul
+                0x00000000000004ac                hard_mulh
+                0x00000000000004b2                hard_mulhsu
+                0x00000000000004b8                hard_mulhu
+                0x00000000000004be                hard_dnn_pcpi
+ .text          0x00000000000004cc      0x3ea firmware/irq.o
+                0x00000000000004cc                irq
+ .text          0x00000000000008b6      0x1ea firmware/print.o
+                0x00000000000008b6                print_chr
+                0x00000000000008d4                print_str
+                0x0000000000000908                print_dec
+                0x000000000000099a                print_hex
+                0x00000000000009f2                print_sign
+ .text          0x0000000000000aa0      0x43e firmware/multest.o
+                0x0000000000000afc                multest
+ .text          0x0000000000000ede      0x1c2 firmware/dnn_pcpi.o
+                0x0000000000000ede                PCPI_hard_fc_mmap
+                0x0000000000000f10                PCPI_LENET_FC2_HARD
+                0x000000000000108c                dnn_pcpi
+ .text          0x00000000000010a0     0x106c firmware/dnn_mmap.o
+                0x00000000000010a0                soft_conv
+                0x0000000000001388                soft_fc
+                0x0000000000001500                unfold
+                0x00000000000017be                hard_conv_mmap
+                0x00000000000018c0                mmap_hard_fc_mmap
+                0x00000000000019ec                LENET_FC2_SOFT
+                0x0000000000001b68                LENET_FC2_HARD
+                0x0000000000001ce4                LENET_CONV2_SOFT
+                0x0000000000001e6a                LENET_CONV2_HARD
+                0x00000000000020f6                dnn_mmap
+ .text          0x000000000000210c      0x1bc firmware/stats.o
+                0x0000000000002206                stats
+                0x00000000000022ae                tick
+ *fill*         0x00000000000022c8        0x0 
+ .text          0x00000000000022c8       0x24 /users/course/tools/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(muldi3.o)
+                0x00000000000022c8                __mulsi3
+ .text          0x00000000000022ec       0x90 /users/course/tools/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(multi3.o)
+                0x00000000000022ec                __muldi3
+ .text          0x000000000000237c       0xb4 /users/course/tools/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(div.o)
+                0x000000000000237c                __divsi3
+                0x0000000000002384                __udivsi3
+                0x00000000000023cc                __umodsi3
+                0x0000000000002400                __modsi3
+ *(*)
+ .data          0x0000000000002430        0x0 firmware/start.o
+ .bss           0x0000000000002430        0x0 firmware/start.o
+ .data          0x0000000000002430        0x0 firmware/irq.o
+ .bss           0x0000000000002430        0xc firmware/irq.o
+ .rodata        0x000000000000243c      0x16b firmware/irq.o
+ .comment       0x00000000000025a7       0x11 firmware/irq.o
+                                         0x12 (鬆開之前的大小)
+ .data          0x00000000000025b8        0x0 firmware/print.o
+ .bss           0x00000000000025b8        0x0 firmware/print.o
+ .rodata        0x00000000000025b8       0x16 firmware/print.o
+ .comment       0x00000000000025ce       0x12 firmware/print.o
+ .data          0x00000000000025ce        0x0 firmware/multest.o
+ .bss           0x00000000000025ce        0x0 firmware/multest.o
+ *fill*         0x00000000000025ce        0x2 
+ .rodata        0x00000000000025d0       0x85 firmware/multest.o
+ *fill*         0x0000000000002655        0x3 
+ .sdata         0x0000000000002658        0x4 firmware/multest.o
+ .comment       0x000000000000265c       0x12 firmware/multest.o
+ .data          0x000000000000265c        0x0 firmware/dnn_pcpi.o
+ .bss           0x000000000000265c        0x0 firmware/dnn_pcpi.o
+ .rodata        0x000000000000265c       0x60 firmware/dnn_pcpi.o
+ .comment       0x00000000000026bc       0x12 firmware/dnn_pcpi.o
+ .data          0x00000000000026bc        0x0 firmware/dnn_mmap.o
+ .bss           0x00000000000026bc        0x0 firmware/dnn_mmap.o
+ .rodata        0x00000000000026bc      0x10a firmware/dnn_mmap.o
+ .comment       0x00000000000027c6       0x12 firmware/dnn_mmap.o
+ .data          0x00000000000027c6        0x0 firmware/stats.o
+ .bss           0x00000000000027c6        0x0 firmware/stats.o
+ *fill*         0x00000000000027c6        0x2 
+ .rodata        0x00000000000027c8       0x45 firmware/stats.o
+ .comment       0x000000000000280d       0x12 firmware/stats.o
+ .data          0x000000000000280d        0x0 /users/course/tools/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(muldi3.o)
+ .bss           0x000000000000280d        0x0 /users/course/tools/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(muldi3.o)
+ .data          0x000000000000280d        0x0 /users/course/tools/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(multi3.o)
+ .bss           0x000000000000280d        0x0 /users/course/tools/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(multi3.o)
+ .comment       0x000000000000280d       0x12 /users/course/tools/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(multi3.o)
+ .data          0x000000000000280d        0x0 /users/course/tools/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(div.o)
+ .bss           0x000000000000280d        0x0 /users/course/tools/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(div.o)
+                0x000000000000281f                end = .
+LOAD firmware/start.o
+LOAD firmware/irq.o
+LOAD firmware/print.o
+LOAD firmware/multest.o
+LOAD firmware/dnn_pcpi.o
+LOAD firmware/dnn_mmap.o
+LOAD firmware/stats.o
+LOAD /users/course/tools/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a
+OUTPUT(firmware/firmware.elf elf32-littleriscv)

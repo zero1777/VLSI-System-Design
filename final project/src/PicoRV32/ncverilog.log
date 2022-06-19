@@ -1,0 +1,121 @@
+ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s039: Started on Jun 17, 2021 at 00:20:31 CST
+ncverilog
+	testbench_mmap.v
+	dnn_mmap.v
+	picorv32.v
+	+define+COMPRESSED_ISA
+	+access+r
+file: testbench_mmap.v
+	module worklib.testbench:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+`endif) picorv32 (
+               |
+ncelab: *W,CUVWSP (./testbench_mmap.v,229|15): 4 output ports were not connected:
+ncelab: (./picorv32.v,97): pcpi_valid
+ncelab: (./picorv32.v,98): pcpi_insn
+ncelab: (./picorv32.v,99): pcpi_rs1
+ncelab: (./picorv32.v,100): pcpi_rs2
+
+`endif) picorv32 (
+               |
+ncelab: *W,CUVWSI (./testbench_mmap.v,229|15): 4 input ports were not connected:
+ncelab: (./picorv32.v,101): pcpi_wr
+ncelab: (./picorv32.v,102): pcpi_rd
+ncelab: (./picorv32.v,103): pcpi_wait
+ncelab: (./picorv32.v,104): pcpi_ready
+
+	) picorv32_core (
+	              |
+ncelab: *W,CUVWSP (./picorv32.v,2480|15): 5 output ports were not connected:
+ncelab: (./picorv32.v,90): mem_la_read
+ncelab: (./picorv32.v,91): mem_la_write
+ncelab: (./picorv32.v,92): mem_la_addr
+ncelab: (./picorv32.v,93): mem_la_wdata
+ncelab: (./picorv32.v,94): mem_la_wstrb
+
+	) picorv32_core (
+	              |
+ncelab: *W,CUVWSP (./picorv32.v,2740|15): 5 output ports were not connected:
+ncelab: (./picorv32.v,90): mem_la_read
+ncelab: (./picorv32.v,91): mem_la_write
+ncelab: (./picorv32.v,92): mem_la_addr
+ncelab: (./picorv32.v,93): mem_la_wdata
+ncelab: (./picorv32.v,94): mem_la_wstrb
+
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.DNN_MMAP:v <0x5afefd3d>
+			streams:  27, words: 10988
+		worklib.pe:v <0x4d40e0ff>
+			streams:   4, words:  1581
+		worklib.picorv32:v <0x070a7231>
+			streams: 317, words: 157663
+		worklib.picorv32:v <0x24f038c6>
+			streams: 330, words: 132166
+		worklib.picorv32_axi_adapter:v <0x03bdbf96>
+			streams:  15, words:  2775
+		worklib.picorv32_pcpi_div:v <0x7571156c>
+			streams:  16, words:  6027
+		worklib.picorv32_pcpi_mul:v <0x646f430f>
+			streams:  24, words: 11276
+		worklib.picorv32_wb:v <0x324e8d86>
+			streams:   9, words:  2739
+		worklib.picorv32_wrapper:v <0x3081e57f>
+			streams:  40, words: 28884
+		worklib.testbench:v <0x416df535>
+			streams:   9, words: 16653
+		worklib.top:v <0x6fcfdc7d>
+			streams:   5, words: 49690
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                28      12
+		Registers:             764     366
+		Scalar wires:          130       -
+		Vectored wires:        184       -
+		Always blocks:          91      43
+		Initial blocks:          9       7
+		Cont. assignments:      84      94
+		Pseudo assignments:      1       1
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.testbench:v
+Loading snapshot worklib.testbench:v .................... Done
+*Verdi3* Loading libsscore_ius152.so
+*Verdi3* : Enable Parallel Dumping.
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+helllllo   0
+1
+1
+2
+3
+
+Cycle counter ........... 5269
+Instruction counter ...... 784
+CPI: 6.72
+Status:DONE
+
+------------------------------------------------------------
+EBREAK instruction at 0x000004A4
+pc  000004A7    x8  00000000    x16 00000000    x24 00000003
+x1  00000474    x9  00000000    x17 00000000    x25 00000001
+x2  00C00000    x10 20000000    x18 00000002    x26 00009002
+x3  DEADBEEF    x11 200024CC    x19 00000160    x27 00009002
+x4  DEADBEEF    x12 0000004F    x20 00000000    x28 00000000
+x5  000020D2    x13 0000004E    x21 00000015    x29 00000000
+x6  00000008    x14 00000045    x22 000004A4    x30 00000000
+x7  00000000    x15 000001E0    x23 000004A4    x31 000000C4
+------------------------------------------------------------
+Number of fast external IRQs counted: 0
+Number of slow external IRQs counted: 0
+Number of timer IRQs counted: 0
+TRAP after 110535 clock cycles
+ALL TESTS HAVE FINISHED.
+Simulation complete via $finish(1) at time 4425800 NS + 1
+./testbench_mmap.v:490 				$finish;
+ncsim> exit
+TOOL:	ncverilog	15.20-s039: Exiting on Jun 17, 2021 at 00:20:32 CST  (total: 00:00:01)

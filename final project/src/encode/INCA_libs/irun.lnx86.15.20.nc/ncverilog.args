@@ -1,0 +1,14 @@
+//
+// File created by:  ncverilog
+// Do not modify this file
+//
++debug=3
+testbench.v
+gaparr_sram.v
+input_sram.v
+symbol_sram.v
+length_sram.v
+encode_sram.v
+output_sram.v
+top.v
++access+r

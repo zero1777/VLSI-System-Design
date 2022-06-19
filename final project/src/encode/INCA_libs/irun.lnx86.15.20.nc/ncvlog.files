@@ -1,0 +1,12 @@
+//
+// File created by:  ncverilog
+// Do not modify this file
+//
+/users/course/2021S/aml9000000/u106072139/huffman/testbench.v
+/users/course/2021S/aml9000000/u106072139/huffman/gaparr_sram.v
+/users/course/2021S/aml9000000/u106072139/huffman/input_sram.v
+/users/course/2021S/aml9000000/u106072139/huffman/symbol_sram.v
+/users/course/2021S/aml9000000/u106072139/huffman/length_sram.v
+/users/course/2021S/aml9000000/u106072139/huffman/encode_sram.v
+/users/course/2021S/aml9000000/u106072139/huffman/output_sram.v
+/users/course/2021S/aml9000000/u106072139/huffman/top.v

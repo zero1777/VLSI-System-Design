@@ -1,0 +1,9 @@
+//
+// File created by:  ncverilog
+// Do not modify this file
+//
+testbench_mmap.v
+dnn_mmap.v
+picorv32.v
++define+COMPRESSED_ISA
++access+r

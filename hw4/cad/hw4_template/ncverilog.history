@@ -1,0 +1,24 @@
+s1(05Jun2021:02:15:40):  ncverilog testbench_mmap.v dnn_mmap.v picorv32.v +define+COMPRESSED_ISA +access+r 
+s2(05Jun2021:02:17:29):  ncverilog testbench_mmap.v dnn_mmap.v picorv32.v +define+COMPRESSED_ISA +access+r 
+s3(05Jun2021:23:19:14):  ncverilog testbench_mmap.v dnn_mmap.v picorv32.v +define+COMPRESSED_ISA +access+r 
+s4(06Jun2021:00:15:54):  ncverilog testbench_mmap.v dnn_mmap.v picorv32.v +define+COMPRESSED_ISA +access+r 
+s5(06Jun2021:00:19:16):  ncverilog testbench_mmap.v dnn_mmap.v picorv32.v +define+COMPRESSED_ISA +access+r 
+s6(06Jun2021:01:04:47):  ncverilog testbench_mmap.v dnn_mmap.v picorv32.v +define+COMPRESSED_ISA +fsdb +trace +noerror +access+r 
+s7(06Jun2021:01:14:15):  ncverilog testbench_mmap.v dnn_mmap.v picorv32.v +define+COMPRESSED_ISA +access+r 
+s8(06Jun2021:01:18:31):  ncverilog testbench_mmap.v dnn_mmap.v picorv32.v +define+COMPRESSED_ISA +access+r 
+s9(06Jun2021:01:46:02):  ncverilog testbench_mmap.v dnn_mmap.v picorv32.v +define+COMPRESSED_ISA +fsdb +trace +noerror +access+r 
+s10(06Jun2021:01:52:01):  ncverilog testbench_mmap.v dnn_mmap.v picorv32.v +define+COMPRESSED_ISA +fsdb +trace +noerror +access+r 
+s11(06Jun2021:01:52:33):  ncverilog testbench_mmap.v dnn_mmap.v picorv32.v +define+COMPRESSED_ISA +fsdb +trace +noerror +access+r 
+s12(06Jun2021:02:36:10):  ncverilog testbench_mmap.v dnn_mmap.v picorv32.v +define+COMPRESSED_ISA +fsdb +trace +noerror +access+r 
+s13(06Jun2021:17:34:10):  ncverilog testbench_mmap.v dnn_mmap.v picorv32.v +define+COMPRESSED_ISA +access+r 
+s14(06Jun2021:20:06:38):  ncverilog testbench_mmap.v dnn_mmap.v picorv32.v +define+COMPRESSED_ISA +fsdb +trace +noerror +access+r 
+s15(06Jun2021:20:50:55):  ncverilog testbench_mmap.v dnn_mmap.v picorv32.v +define+COMPRESSED_ISA +fsdb +trace +noerror +access+r 
+s16(06Jun2021:21:25:51):  ncverilog testbench_mmap.v dnn_mmap.v picorv32.v +define+COMPRESSED_ISA +fsdb +trace +noerror +access+r 
+s17(06Jun2021:21:24:48):  ncverilog testbench_mmap.v dnn_mmap.v picorv32.v +define+COMPRESSED_ISA +fsdb +trace +noerror +access+r 
+s18(06Jun2021:21:45:26):  ncverilog testbench_mmap.v dnn_mmap.v picorv32.v +define+COMPRESSED_ISA +access+r 
+s19(06Jun2021:21:53:39):  ncverilog testbench_mmap.v dnn_mmap.v picorv32.v +define+COMPRESSED_ISA +access+r 
+s20(06Jun2021:21:58:28):  ncverilog testbench_mmap.v dnn_mmap.v picorv32.v +define+COMPRESSED_ISA +access+r 
+s21(07Jun2021:00:41:25):  ncverilog header.v testbench_mmap.v dnn_syn.v picorv32.v -v /theda21_2/library/GPDK045/cur/gsclib045/verilog/slow_vdd1v2_basicCells.v +define+COMPRESSED_ISA +access+r 
+s22(08Jun2021:11:51:24):  ncverilog header.v testbench_mmap.v dnn_syn.v picorv32.v -v /theda21_2/library/GPDK045/cur/gsclib045/verilog/slow_vdd1v2_basicCells.v +define+COMPRESSED_ISA +access+r 
+s23(08Jun2021:13:34:27):  ncverilog testbench_mmap.v dnn_mmap.v picorv32.v +define+COMPRESSED_ISA +access+r 
+s24(08Jun2021:16:33:49):  ncverilog header.v testbench_mmap.v dnn_syn.v picorv32.v -v /theda21_2/library/GPDK045/cur/gsclib045/verilog/slow_vdd1v2_basicCells.v +define+COMPRESSED_ISA +access+r 

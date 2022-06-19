@@ -1,0 +1,85 @@
+ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s039: Started on Jun 29, 2021 at 08:10:07 CST
+ncverilog
+	+debug=3
+	testbench.v
+	gaparr_sram.v
+	input_sram.v
+	symbol_sram.v
+	length_sram.v
+	encode_sram.v
+	output_sram.v
+	top.v
+	+access+r
+Loading snapshot worklib.testbench:v .................... Done
+*Verdi3* Loading libsscore_ius152.so
+*Verdi3* : Enable Parallel Dumping.
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+>> Reading the image file: input.txt
+>> Reading the weight file: symbol.txt
+>> Reading the gaparr file: length.txt
+>> Reading the codeseq file: encode.txt
+FSDB Dumper for IUS, Release Verdi3_L-2016.06-SP1-1, Linux, 09/27/2016
+(C) 1996 - 2016 by Synopsys, Inc.
+*Verdi3* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi3* : Create FSDB file 'filter.fsdb'
+*Verdi3* : Begin traversing the scopes, layer (0).
+*Verdi3* : End of traversing.
+>> Debug level =          3
+>> Reading the golden file: output.txt
+>> Reading the gaparr file: gaparr.txt
+Prefix sum are:   0,   3,   5,   5,   5,   5,   5,   5,   5,   3,   3,   3
+Prefix sum are:   0,   3,   5,   5,   8,   8,   5,   5,   5, 252, 255,   2
+Prefix sum are:   0,   3,   5,   8,  11,  11,   8,   8,   8,   5,   8,  11
+Prefix sum are:   0,   3,   5,   4,   7,   9,   5,   7,   9,   8,  11,  14
+Prefix sum are:   0,   3,   5,   8,  11,  13,  11,  13,  15,  11,  14,  17
+Prefix sum are:   0,   3,   5,   8,  11,  13,  15,  17,  19,  17,  20,  23
+Prefix sum are:   0,   3,   5,   8,  11,  13,  15,  17,  19,  21,  24,  27
+Prefix sum are:   0,   3,   5,   8,  11,  13,  15,  17,  19,  21,  24,  27
+    X
+    0
+    0
+    0
+    1
+ done 
+Individual prefix sum is:   8,  15,  21,  30
+it's done
+>> Check the output data
+[Success] golden[          0]=10101110 | data[          0]=10101110
+[Success] golden[          1]=11100000 | data[          1]=11100000
+[Success] golden[          2]=00000111 | data[          2]=00000111
+[Success] golden[          3]=11111100 | data[          3]=11111100
+[Error  ] golden[          4]=01100110 | data[          4]=00000000
+[Error  ] golden[          5]=01000110 | data[          5]=00000000
+[Error  ] golden[          6]=10111001 | data[          6]=00000000
+[Error  ] golden[          7]=10101000 | data[          7]=00000000
+[Error  ] golden[          8]=11111011 | data[          8]=00000000
+[Error  ] golden[          9]=01110111 | data[          9]=00000000
+[Error  ] golden[         10]=11100000 | data[         10]=00000000
+[Error  ] golden[         11]=01001000 | data[         11]=00000000
+[Error  ] golden[         12]=11011100 | data[         12]=00000000
+[Error  ] golden[         13]=01111010 | data[         13]=00000000
+[Error  ] golden[         14]=11101111 | data[         14]=00000000
+[Error  ] golden[         15]=01011001 | data[         15]=00000000
+[Error  ] golden[         16]=00111001 | data[         16]=00000000
+[Error  ] golden[         17]=00100010 | data[         17]=00000000
+[Error  ] golden[         18]=10111011 | data[         18]=00000000
+[Error  ] golden[         19]=01010001 | data[         19]=00000000
+[Error  ] golden[         20]=11010111 | data[         20]=00000000
+[Error  ] golden[         21]=00000001 | data[         21]=00000000
+[Error  ] golden[         22]=xxxxxxxx | data[         22]=00000000
+[Error  ] golden[         23]=xxxxxxxx | data[         23]=00000000
+[Error  ] golden[         24]=xxxxxxxx | data[         24]=00000000
+[Error  ] golden[         25]=xxxxxxxx | data[         25]=00000000
+[Error  ] golden[         26]=xxxxxxxx | data[         26]=00000000
+[Error  ] golden[         27]=xxxxxxxx | data[         27]=00000000
+[Error  ] golden[         28]=xxxxxxxx | data[         28]=00000000
+[[0;31mWrong[0m] debug and try it again!
+[[0;34mTime usage[0m]        1810 ns
+Individual prefix sum is:   8,  15,  21,  30
+it's done
+Simulation complete via $finish(1) at time 5900 NS + 0
+./testbench.v:207         $finish;
+ncsim> exit
+TOOL:	ncverilog	15.20-s039: Exiting on Jun 29, 2021 at 08:10:11 CST  (total: 00:00:04)

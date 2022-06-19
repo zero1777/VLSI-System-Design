@@ -1,0 +1,128 @@
+wvSetPosition -win $_nWave1 {("G1" 0)}
+wvOpenFile -win $_nWave1 \
+           {/users/course/2021S/aml9000000/u106072139/huffman/filter.fsdb}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/gaparr_sram"
+wvGetSignalSetScope -win $_nWave1 "/testbench"
+wvGetSignalSetScope -win $_nWave1 "/testbench/top01"
+wvSetPosition -win $_nWave1 {("G1" 8)}
+wvSetPosition -win $_nWave1 {("G1" 8)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/testbench/top01/index\[7:0\]} \
+{/testbench/top01/inputADDR\[15:0\]} \
+{/testbench/top01/input_i\[15:0\]} \
+{/testbench/top01/next_index\[7:0\]} \
+{/testbench/top01/next_inputADDR\[15:0\]} \
+{/testbench/top01/next_input_i\[15:0\]} \
+{/testbench/top01/next_state\[7:0\]} \
+{/testbench/top01/state\[7:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 1 2 3 4 5 6 7 8 )} 
+wvSetPosition -win $_nWave1 {("G1" 8)}
+wvGetSignalClose -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 1 2 3 4 5 6 7 8 )} 
+wvSetRadix -win $_nWave1 -format UDec
+wvZoomAll -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvSetCursor -win $_nWave1 181040085165.036682
+wvSelectGroup -win $_nWave1 {G2}
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvSetCursor -win $_nWave1 8020.633517
+wvSetCursor -win $_nWave1 10744.622258
+wvSetCursor -win $_nWave1 12257.949337
+wvSetCursor -win $_nWave1 18765.255775
+wvSetCursor -win $_nWave1 27164.221061
+wvSetCursor -win $_nWave1 83611.321093
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvSetCursor -win $_nWave1 1033905.060098
+wvSetCursor -win $_nWave1 1881368.224113
+wvSetCursor -win $_nWave1 1828099.110946
+wvSetCursor -win $_nWave1 1789357.937734
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/gaparr_sram"
+wvGetSignalSetScope -win $_nWave1 "/testbench"
+wvGetSignalSetScope -win $_nWave1 "/testbench/top01"
+wvGetSignalSetScope -win $_nWave1 "/testbench/top01"
+wvSetPosition -win $_nWave1 {("G1" 9)}
+wvSetPosition -win $_nWave1 {("G1" 9)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/testbench/top01/index\[7:0\]} \
+{/testbench/top01/inputADDR\[15:0\]} \
+{/testbench/top01/input_i\[15:0\]} \
+{/testbench/top01/next_index\[7:0\]} \
+{/testbench/top01/next_inputADDR\[15:0\]} \
+{/testbench/top01/next_input_i\[15:0\]} \
+{/testbench/top01/next_state\[7:0\]} \
+{/testbench/top01/state\[7:0\]} \
+{/testbench/top01/symbolADDR\[15:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 9 )} 
+wvSetPosition -win $_nWave1 {("G1" 9)}
+wvGetSignalClose -win $_nWave1
+wvSetCursor -win $_nWave1 2014541.007029
+wvSetCursor -win $_nWave1 2230038.783022
+wvSetCursor -win $_nWave1 2416480.679105
+wvSetCursor -win $_nWave1 2593237.281885
+wvSelectSignal -win $_nWave1 {( "G1" 9 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 9 )} 
+wvSetRadix -win $_nWave1 -format UDec
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/gaparr_sram"
+wvGetSignalSetScope -win $_nWave1 "/testbench"
+wvGetSignalSetScope -win $_nWave1 "/testbench/top01"
+wvGetSignalSetScope -win $_nWave1 "/testbench/top01"
+wvSetPosition -win $_nWave1 {("G1" 10)}
+wvSetPosition -win $_nWave1 {("G1" 10)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/testbench/top01/index\[7:0\]} \
+{/testbench/top01/inputADDR\[15:0\]} \
+{/testbench/top01/input_i\[15:0\]} \
+{/testbench/top01/next_index\[7:0\]} \
+{/testbench/top01/next_inputADDR\[15:0\]} \
+{/testbench/top01/next_input_i\[15:0\]} \
+{/testbench/top01/next_state\[7:0\]} \
+{/testbench/top01/state\[7:0\]} \
+{/testbench/top01/symbolADDR\[15:0\]} \
+{/testbench/top01/encodeADDR\[15:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 10 )} 
+wvSetPosition -win $_nWave1 {("G1" 10)}
+wvGetSignalClose -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 10 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 10 )} 
+wvSetRadix -win $_nWave1 -format UDec
+wvSetCursor -win $_nWave1 26365840342.070442
+wvExit
