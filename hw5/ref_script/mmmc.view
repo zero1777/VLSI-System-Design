@@ -1,0 +1,13 @@
+# Version:1.0 MMMC View Definition File
+# Do Not Remove Above Line
+create_rc_corner -name RC -qx_tech_file {/theda21_2/library/GPDK045/gsclib045_svt_v4.4/gsclib045/qrc/qx/gpdk045.tch}
+create_library_set -name lib_max -timing {/theda21_2/library/GPDK045/gsclib045_svt_v4.4/gsclib045/lib/slow_vdd1v2_basicCells.lib} \
+    -si {/theda21_2/library/GPDK045/gsclib045_svt_v4.4/gsclib045/celtic/slow.cdb}
+create_library_set -name lib_min -timing {/theda21_2/library/GPDK045/gsclib045_svt_v4.4/gsclib045/lib/fast_vdd1v2_basicCells.lib} \
+    -si {/theda21_2/library/GPDK045/gsclib045_svt_v4.4/gsclib045/celtic/fast.cdb}
+create_constraint_mode -name CN_func -sdc_files {../pre_layout/top_pipe_syn.sdc}
+create_delay_corner -name DC_max -library_set {lib_max} -rc_corner {RC}
+create_delay_corner -name DC_min -library_set {lib_min} -rc_corner {RC}
+create_analysis_view -name AV_max -constraint_mode {CN_func} -delay_corner {DC_max}
+create_analysis_view -name AV_min -constraint_mode {CN_func} -delay_corner {DC_min}
+set_analysis_view -setup {AV_max} -hold {AV_min}

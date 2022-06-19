@@ -1,0 +1,38 @@
+****************************************
+Report : Time Based Power
+Design : DNN_MMAP
+Version: R-2020.09
+Date   : Thu Jul  1 03:15:38 2021
+****************************************
+
+
+
+  Attributes
+  ----------
+      i  -  Including register clock pin internal power
+      u  -  User defined power group
+
+                        Internal  Switching  Leakage    Total
+Power Group             Power     Power      Power      Power   (     %)  Attrs
+--------------------------------------------------------------------------------
+clock_network           1.914e-04 3.330e-05 1.715e-08 2.247e-04 (74.83%)  i
+register                1.193e-05 6.092e-06 4.023e-07 1.843e-05 ( 6.14%)  
+combinational           3.392e-05 2.230e-05 9.222e-07 5.714e-05 (19.03%)  
+sequential                 0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+memory                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+io_pad                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+black_box                  0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+
+  Net Switching Power  = 6.169e-05   (20.54%)
+  Cell Internal Power  = 2.372e-04   (79.01%)
+  Cell Leakage Power   = 1.342e-06   ( 0.45%)
+                         ---------
+Total Power            = 3.003e-04  (100.00%)
+
+X Transition Power     =    0.0000
+Glitching Power        = 1.291e-07
+
+Peak Power             =    0.0915
+Peak Time              = 139120.100
+
+1

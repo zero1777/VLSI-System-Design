@@ -1,0 +1,25 @@
+# Version:1.0 MMMC View Definition File
+# Do Not Remove Above Line
+
+# Create RC corner
+create_rc_corner -name RC -qx_tech_file {/theda21_2/library/GPDK045/cur/gsclib045/qrc/qx/gpdk045.tch}
+
+# Load timing library and signal integrity library
+create_library_set -name lib_max -timing {/theda21_2/library/GPDK045/cur/gsclib045/timing/slow_vdd1v2_basicCells.lib} \
+    -si {/theda21_2/library/GPDK045/cur/gsclib045/celtic/slow.cdb}
+create_library_set -name lib_min -timing {/theda21_2/library/GPDK045/cur/gsclib045/timing/fast_vdd1v2_basicCells.lib} \
+    -si {/theda21_2/library/GPDK045/cur/gsclib045/celtic/fast.cdb}
+
+# Specify constraint mode
+create_constraint_mode -name CN_func -sdc_files {../pre_layout/netlist/dnn_syn.sdc}
+
+# Specify delay corners
+create_delay_corner -name DC_max -library_set {lib_max} -rc_corner {RC}
+create_delay_corner -name DC_min -library_set {lib_min} -rc_corner {RC}
+
+# Specify analysis view
+create_analysis_view -name AV_max -constraint_mode {CN_func} -delay_corner {DC_max}
+create_analysis_view -name AV_min -constraint_mode {CN_func} -delay_corner {DC_min}
+
+# Set timing analysis view
+set_analysis_view -setup {AV_max} -hold {AV_min}

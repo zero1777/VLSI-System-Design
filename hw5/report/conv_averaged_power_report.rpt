@@ -1,0 +1,32 @@
+****************************************
+Report : Averaged Power
+Design : DNN_MMAP
+Version: R-2020.09
+Date   : Thu Jul  1 03:26:30 2021
+****************************************
+
+
+
+  Attributes
+  ----------
+      i  -  Including register clock pin internal power
+      u  -  User defined power group
+
+                        Internal  Switching  Leakage    Total
+Power Group             Power     Power      Power      Power   (     %)  Attrs
+--------------------------------------------------------------------------------
+clock_network           1.914e-04 3.330e-05 1.715e-08 2.247e-04 (98.97%)  i
+register                1.427e-07 5.979e-08 3.918e-07 5.942e-07 ( 0.26%)  
+combinational           4.646e-07 3.903e-07 8.807e-07 1.736e-06 ( 0.76%)  
+sequential                 0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+memory                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+io_pad                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+black_box                  0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+
+  Net Switching Power  = 3.375e-05   (14.86%)
+  Cell Internal Power  = 1.920e-04   (84.57%)
+  Cell Leakage Power   = 1.290e-06   ( 0.57%)
+                         ---------
+Total Power            = 2.271e-04  (100.00%)
+
+1
