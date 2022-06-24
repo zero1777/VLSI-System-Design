@@ -23,3 +23,6 @@ NTHU CS. 10920 CS512000 VLSI System Design.
 
 ## hw5
 - Walk through the APR flow with Cadence Innovus
+
+## Final project: Huffman Coding Accelerator
+- 
