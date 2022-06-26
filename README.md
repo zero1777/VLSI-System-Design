@@ -24,5 +24,15 @@ NTHU CS. 10920 CS512000 VLSI System Design.
 ## hw5
 - Walk through the APR flow with Cadence Innovus
 
-## Final project: Huffman Coding Accelerator
-- 
+## Final project 
+- Huffman Coding Accelerator in Verilog with PicoRV32 
+- Encode
+  - Implement a prefix sum array to record each symbol start index in the encoded sequence.
+  - The encoder can parallel encode symbol according to the prefix sum array.
+- Decode
+  - Implement a gap array to record each segment's (8-bit) start index of the first complete encoded subsequence of a symbol.
+  - Segments are partitioned from the encoded sequence with 8-bit each.
+  - The decoder can parallel decode the encoded sequence according to the gap array. 
+- Performance
+  - Encode: unfinished
+  - Decode: 2~3x speedup (w/ 4 decoder)
