@@ -35,4 +35,4 @@ NTHU CS. 10920 CS512000 VLSI System Design.
   - The decoder can parallel decode the encoded sequence according to the gap array. 
 - Performance
   - Encode: unfinished
-  - Decode: 2~3x speedup (w/ 4 decoder)
+  - Decode: 2~3x speedup (w/ 4 decoders)
